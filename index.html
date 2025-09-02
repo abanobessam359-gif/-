@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>آية عشوائية</title>
+    <style>
+      body { 
+        font-family: "Tahoma", sans-serif; 
+        text-align: center; 
+        padding: 50px; 
+        background: #f9f9f9;
+      }
+      .verse {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2c3e50;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>آية من الكتاب المقدس</h1>
+    <div class="verse" id="verse"></div>
+  
+    <script>
+      const verses = [
+        "الرب راعي فلا يعوزني شيء (مزمور 23:1)",
+        "كل الأشياء تعمل معًا للخير للذين يحبون الله (رومية 8:28)",
+        "سلامي أترك لكم سلامي أعطيكم (يوحنا 14:27)",
+        "أستطيع كل شيء في المسيح الذي يقويني (فيلبي 4:13)",
+        "الرب نوري وخلاصي ممن أخاف (مزمور 27:1)"
+      ];
+  
+      const randomVerse = verses[Math.floor(Math.random() * verses.length)];
+      document.getElementById("verse").textContent = randomVerse;
+    </script>
+  </body>
+  </html>
+  
